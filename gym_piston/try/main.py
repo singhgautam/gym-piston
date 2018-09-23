@@ -1,14 +1,6 @@
 import gym
 import time
-from gym.envs.registration import register
-
-register(
-    id = 'Piston-v0',
-    entry_point = 'gym_piston.envs:PistonEnv',
-    timestep_limit=1000,
-    reward_threshold=1.0,
-    nondeterministic = True,
-)
+import gym_piston
 
 
 env = gym.make('Piston-v0')
